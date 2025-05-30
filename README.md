@@ -6,6 +6,7 @@
 ---
 
 Note: An understanding of L2/L3 of the OSI model will help, if you need a quick refresher on the OSI model refer to this handy doc here: 
+
 https://github.com/infernalsoul/dream_machine_pro_dive.md/blob/main/osi_model_quick_summary.md
 
 **My honest summary:**
