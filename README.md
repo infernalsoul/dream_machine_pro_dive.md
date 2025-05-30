@@ -5,6 +5,9 @@
 
 ---
 
+Note: An understanding of L2/L3 of the OSI model will help, if you need a quick refresher on the OSI model refer to this handy doc here: 
+https://github.com/infernalsoul/dream_machine_pro_dive.md/blob/main/osi_model_quick_summary.md
+
 **My honest summary:**
 
 >UniFi's Dream Machine Pro is what happens when you order network security from Wish - they promise Fort Knox but deliver a bouncy castle where your work VPN, smart dildo, and grandma's Alexa are all raw-dogging the same ethernet bukkake party on bridge ID 8000.70a741edc1df, spraying ARP requests across every VLAN like a fire hose at a wet t-shirt contest while your firewall rules sit there softer than a whiskey dick, watching helplessly as your "isolated" networks run train on each other in a Layer 2 gangbang so filthy it would make PornHub implement age verification, and the sickest part is these motherfuckers KNEW - they KNEW they were selling you a $1,200 participation trophy in network security theater, banking on the fact that you'd be too mesmerized by their shiny web UI to notice that your IoT toaster and corporate secrets are tongue-punching each other's fart boxes in the same broadcast domain while Ubiquiti's executives are probably yacht shopping with your money, laughing at how they convinced an entire generation of IT professionals that a bridge pretending to be a router was somehow "prosumer grade" when it's actually about as useful for security as a chocolate fucking firewall in Satan's asshole.
