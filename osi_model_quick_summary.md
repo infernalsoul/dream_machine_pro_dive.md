@@ -1,4 +1,4 @@
-# OSI Model Deep Dive: From Electrons to Applications
+# OSI Model Summary: From Electrons to Applications
 
 ## Table of Contents
 - [Introduction](#introduction)
