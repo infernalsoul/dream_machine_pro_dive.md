@@ -1,5 +1,5 @@
 # UniFi Dream Machine Pro: When Enterprise Dreams Meet Reality
-**A Technical Deep Dive into Why Your $500 "Enterprise" Router Can't Isolate VLANs**
+**A Technical Deep Dive into Why Your $1,200 "Enterprise" Router Can't Isolate VLANs**
 
 > **Data Sanitization Notice**: All network data, device names, file names, and sensitive information in this analysis have been sanitized for public disclosure. No actual personal or confidential data is exposed in this research.
 
@@ -7,7 +7,7 @@
 
 **My honest summary:**
 
->UniFi's Dream Machine Pro is what happens when you order network security from Wish - they promise Fort Knox but deliver a bouncy castle where your work VPN, smart dildo, and grandma's Alexa are all raw-dogging the same ethernet bukkake party on bridge ID 8000.70a741edc1df, spraying ARP requests across every VLAN like a fire hose at a wet t-shirt contest while your firewall rules sit there softer than a whiskey dick, watching helplessly as your "isolated" networks run train on each other in a Layer 2 gangbang so filthy it would make PornHub implement age verification, and the sickest part is these motherfuckers KNEW - they KNEW they were selling you a $500 participation trophy in network security theater, banking on the fact that you'd be too mesmerized by their shiny web UI to notice that your IoT toaster and corporate secrets are tongue-punching each other's fart boxes in the same broadcast domain while Ubiquiti's executives are probably yacht shopping with your money, laughing at how they convinced an entire generation of IT professionals that a bridge pretending to be a router was somehow "prosumer grade" when it's actually about as useful for security as a chocolate fucking firewall in Satan's asshole.
+>UniFi's Dream Machine Pro is what happens when you order network security from Wish - they promise Fort Knox but deliver a bouncy castle where your work VPN, smart dildo, and grandma's Alexa are all raw-dogging the same ethernet bukkake party on bridge ID 8000.70a741edc1df, spraying ARP requests across every VLAN like a fire hose at a wet t-shirt contest while your firewall rules sit there softer than a whiskey dick, watching helplessly as your "isolated" networks run train on each other in a Layer 2 gangbang so filthy it would make PornHub implement age verification, and the sickest part is these motherfuckers KNEW - they KNEW they were selling you a $1,200 participation trophy in network security theater, banking on the fact that you'd be too mesmerized by their shiny web UI to notice that your IoT toaster and corporate secrets are tongue-punching each other's fart boxes in the same broadcast domain while Ubiquiti's executives are probably yacht shopping with your money, laughing at how they convinced an entire generation of IT professionals that a bridge pretending to be a router was somehow "prosumer grade" when it's actually about as useful for security as a chocolate fucking firewall in Satan's asshole.
 
 **TL;DR: UniFi Dream Machine Pro - where your $1,200 buys you the illusion of network security.**
 > UniFi's $1,200 "enterprise" router? It buys you the illusion of network security. This architectural abortion implements "enterprise VLANs" on a shared Layer 2 bridge, meaning your isolation is as real as their marketing claims.
@@ -17,7 +17,7 @@
 > The Dream Machine Pro dreams of being a real router while `bridge-nf-call-iptables=0` ensures your security is pure theater.
 > Ubiquiti marketed Layer 3 isolation but delivered Layer 2 chaos where your smart doorbell can ARP poison your corporate VPN.
 > Time to breach: however long it takes to type 'ping'.
-> This isn't a VLAN implementation, it's a $500 lesson in why marketing wankers shouldn't design network architecture.
+> This isn't a VLAN implementation, it's a $1,200 lesson in why marketing wankers shouldn't design network architecture.
 
 ![UniFi Security Analysis](https://img.shields.io/badge/Security%20Analysis-CRITICAL%20FAILURE-red?style=for-the-badge)
 ![Network Isolation](https://img.shields.io/badge/VLAN%20Isolation-0%25%20Effective-red?style=for-the-badge)
@@ -39,7 +39,7 @@
 ## 🎯 Quick Facts
 ```yaml
 Device: UniFi Dream Machine Pro
-Price: $500 USD
+Price: $1,200 AUD
 Marketing Claims: "Enterprise-grade VLAN isolation"
 Reality: "Complete security failure"
 VLANs Tested: 4 networks
@@ -55,7 +55,7 @@ Overall Security Rating: 💀 CATASTROPHICALLY BROKEN
 
 ## 🚨 EXECUTIVE SUMMARY
 
-Picture this: You've just dropped $500 on Ubiquiti's flagship Dream Machine Pro, seduced by glossy marketing materials promising "enterprise-grade security," "advanced VLAN isolation," and "professional network segmentation." The website screams about Layer 3 switching capabilities, enterprise firewall features, and bulletproof network isolation that would make a Cisco engineer weep with joy. You've spent hours crafting the perfect network topology, meticulously planning your VLANs, and configuring what you believe will be an impenetrable fortress of network security.
+Picture this: You've just dropped $1,200 on Ubiquiti's flagship Dream Machine Pro, seduced by glossy marketing materials promising "enterprise-grade security," "advanced VLAN isolation," and "professional network segmentation." The website screams about Layer 3 switching capabilities, enterprise firewall features, and bulletproof network isolation that would make a Cisco engineer weep with joy. You've spent hours crafting the perfect network topology, meticulously planning your VLANs, and configuring what you believe will be an impenetrable fortress of network security.
 
 Then reality hits like a freight train carrying disappointment and buyer's remorse.
 
@@ -75,7 +75,7 @@ Our investigation reveals that what Ubiquiti markets as "advanced Layer 3 switch
 
 ### 🎯 Testing Methodology
 
-Right, let's get one thing straight from the start: we didn't set out to completely demolish UniFi's marketing claims. We genuinely wanted to believe that a $500 piece of kit marketed as "enterprise-grade" could handle basic network isolation without breaking into a cold sweat. Spoiler alert: it can't, and we've got the packet dumps to prove it.
+Right, let's get one thing straight from the start: we didn't set out to completely demolish UniFi's marketing claims. We genuinely wanted to believe that a $1,200 piece of kit marketed as "enterprise-grade" could handle basic network isolation without breaking into a cold sweat. Spoiler alert: it can't, and we've got the packet dumps to prove it.
 
 The goal was simple – test whether the Dream Machine Pro can actually implement proper VLAN isolation between different network segments. You know, that fundamental networking concept that's been working reliably since the 1990s. We configured four distinct VLANs representing common use cases: Work network (for those WFH security requirements), Home network (family devices), IoT network (because smart toasters need their own jail), and Management network (the crown jewels). Each VLAN was configured with proper IP ranges, firewall rules, and all the security theatre that makes network engineers feel warm and fuzzy inside.
 
@@ -1512,7 +1512,7 @@ For any organization using UniFi Dream Machine Pro for network security:
 
 | Item | Expected Cost | Actual Cost |
 |------|---------------|-------------|
-| Dream Machine Pro | $500 | $500 |
+| Dream Machine Pro | $1,200 | $1,200 |
 | "Enterprise Security" | Included | $0 (non-existent) |
 | Actual Enterprise Router | $2000+ | Still needed |
 | Data Breach Cleanup | $0 | $50,000-$5,000,000 |
@@ -1614,7 +1614,7 @@ echo 1 > /proc/sys/net/bridge/bridge-nf-call-arptables
 
 ## 📝 CONCLUSION
 
-The UniFi Dream Machine Pro represents everything wrong with modern "prosumer" networking equipment - marketing teams promising enterprise features while engineering teams implement fundamentally broken architectures. It's a $500 lesson in why you should never trust vendor security claims without independent verification.
+The UniFi Dream Machine Pro represents everything wrong with modern "prosumer" networking equipment - marketing teams promising enterprise features while engineering teams implement fundamentally broken architectures. It's a $1,200 lesson in why you should never trust vendor security claims without independent verification.
 
 This analysis demonstrates that UniFi's simplified VLAN implementation prioritizes ease-of-use over security isolation, requiring physical architecture changes to achieve true network segmentation. The device's bridge-based architecture makes it architecturally impossible to achieve the network isolation that VLANs are designed to provide.
 
@@ -1631,13 +1631,13 @@ If you're reading this and currently relying on UniFi equipment for network secu
 
 ### Disclosure Timeline
 
-- **May 2025**: Vulnerabilities discovered during routine security audit
-- **May 2025**: Vendor notified (no response)
-- **May 2025**: Public disclosure due to severity and lack of vendor response
+- **May 28 2025**: Vulnerabilities discovered during routine security audit
+- **May 28 2025**: Vendor notified (no response)
+- **May 31 2025**: Public disclosure due to severity and lack of vendor response
 
 ---
 
-**Authors**: Network Security Research Team  
+**Authors**: Fuckers who hate lying marketing shitcunts  
 **Date**: May 30, 2025  
 **Version**: 1.0  
 **Classification**: Public Security Advisory  
@@ -1647,7 +1647,7 @@ If you're reading this and currently relying on UniFi equipment for network secu
 **Firmware Version**: 4.2.12  
 **Controller Version**: 7.4.156  
 
-**Special Thanks**: To the security community for peer review and validation
+**Special Thanks**: To Ubiquiti for demonstrating that "enterprise-grade" is just marketing speak for "hold my beer while I implement VLANs with the security architecture of a wet paper bag
 
 ---
 
